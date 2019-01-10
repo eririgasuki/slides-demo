@@ -12,7 +12,7 @@
 .slides {
     display: flex;
     width: 300px;
-    height: 300px;
+    height: 200px;
     justify-content: flex-start;
     overflow: hidden;
 }
