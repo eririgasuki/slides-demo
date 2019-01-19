@@ -1,5 +1,5 @@
 var allImgs = $('.slides > img')
-var allButtons = $('#buttons > span')
+var allButtons = $('#buttons > button')
 var timeID
 var index = 0
 
@@ -26,7 +26,7 @@ function slideImg() {
     if (index === allImgs.length) {
         index = index - allImgs.length
     }
-    var p = index * -300
+    var p = index * -640
     $(allButtons[index]).addClass('red')
         .siblings('.red').removeClass('red')
     for (let i = 0; i < allImgs.length; i++) {
@@ -41,7 +41,7 @@ function btnLinkage() {
     for (let i = 0; i < allButtons.length; i++) {
         $(allButtons[i]).on('click', function (e) {
             var index = $(e.currentTarget).index()
-            var p = index * -300
+            var p = index * -640
             $('.image').css({
                 transform: 'translateX(' + p + 'px)'
             })

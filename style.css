@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #F6F6F6;
 }
 
 .window {
@@ -11,10 +12,11 @@
 
 .slides {
     display: flex;
-    width: 300px;
-    height: 200px;
+    width: 640px;
+    height: 600px;
     justify-content: flex-start;
     overflow: hidden;
+    border: 1px solid rgb(216,216,216);
 }
 
 .image {
@@ -25,6 +27,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 640px;
+    margin: 0 auto;
+    background-color: rgb(242,242,242);
+    border: 1px solid rgb(216,216,216);
 }
 
 .buttons>span {
@@ -32,5 +38,17 @@
 }
 
 .red {
-    color: red;
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    outline: none;
+}
+
+.buttons button{
+    width: 100px;
+    height: 50px;
+    border: none;
+}
+.buttons button:focus{
+    outline:none;
 }
